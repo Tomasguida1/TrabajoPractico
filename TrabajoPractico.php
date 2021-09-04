@@ -1,11 +1,14 @@
 <?php
-$o = 10;
-for ($i = 0; $i > $o; $i++) {
-    if ($i < 10) {
-        echo "Todabia no supero el numero 10";
-    } elseif ($i === 5) {
-        echo "mitad de camino...";
-    } else {
-        echo "supero el numero 10";
+$o = $_GET["num"];
+$mit = $o / 2;
+
+
+for ($i = 0; $i < $o; $i++) {
+    if ($i < $o) {
+        echo "todabia no supero <br>";
+    }
+    if ($i === $mit) {
+        echo "mitad <br>";
     }
 }
+echo "el numero fue superado";
